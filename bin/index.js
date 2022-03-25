@@ -1,5 +1,5 @@
 const { program } = require('commander');
-const { log } = require("../lib/index");
+const { extractFiles } = require('./io.js')
 
 program
   .name('css2saas')
@@ -15,7 +15,7 @@ program.command('run')
   .option('--del-in', 'will delete in comments')
   .action((str, options) => {
     console.log('options', options);
-    log(str)
+    console.log(str)
   });
 
 program.parse(process.argv)
