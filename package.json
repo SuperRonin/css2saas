@@ -1,16 +1,17 @@
 {
-  "name": "css2saas",
-  "version": "1.0.0",
-  "description": "A css2saas tool",
+  "name": "css-pipe-all",
+  "version": "1.0.12",
+  "description": "A css-pipe-all tool",
   "main": "index.js",
   "scripts": {},
   "bin": {
-    "css2saas": "./bin/index.js"
+    "cssPipe": "./bin/index.js"
   },
   "keywords": [],
   "author": "xuexingwei20@163.com",
   "license": "ISC",
   "dependencies": {
-    "commander": "^9.1.0"
+    "commander": "^9.1.0",
+    "css-minifiers": "^3.0.0"
   }
 }
