@@ -12,6 +12,6 @@
   "license": "ISC",
   "dependencies": {
     "commander": "^9.1.0",
-    "css-minifiers": "^3.0.0"
+    "clean-css": "^5.2.4"
   }
 }
