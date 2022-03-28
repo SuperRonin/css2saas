@@ -6,6 +6,8 @@
 npm i css-pipe-all
 
 yarn add css-pipe-all
+
+cssPipe run <dirname> -t <suffix> -opt <options>
 ```
 
 #### 目前实现功能
