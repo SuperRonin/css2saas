@@ -1,5 +1,6 @@
 #!/usr/bin/env node
 const { program } = require('commander');
+const consola = require('consola')
 const { extractFiles, delFiles } = require('../lib/io.js')
 
 program
@@ -18,9 +19,10 @@ program.command('run')
   .option('--del-in', 'will delete in comments')
   .option('--del-file', 'will delete args type file')
   .action((str, options) => {
-    console.log('options', options);
-    console.log(str)
-    if(options.settings.includes('delFile') && options.type){
+    // console.log('options', options);
+    // console.log(str)
+    consola.info('开始转换...')
+    if(options.settings?.includes('delFile') && options.type){
       delFiles(str, options.type)
       return
     }

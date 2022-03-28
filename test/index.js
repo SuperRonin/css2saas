@@ -3,6 +3,11 @@ const path = require('path');
 var CleanCSS = require('clean-css');
 const { extractFiles } = require('../lib/io.js')
 
+/**
+ * 转换文件
+ * @param {*} dir 
+ * @param {*} suffix 
+ */
 // const dirName = '/index.wxss'; //要转换的文件路径
 // fs.readFile(path.join(__dirname, dirName), 'utf-8', function (err, data) {
 //   if (err) {
@@ -18,7 +23,13 @@ const { extractFiles } = require('../lib/io.js')
 //     console.log('output', output);
 //   })
 // })
-delFile('test', 'wxss')
+
+/**
+ * 删除文件
+ * @param {*} dir 
+ * @param {*} suffix 
+ */
+// delFile('test', 'wxss')
 function delFile(dir, suffix) {
   fs.readdir(path.resolve(dir), (err, files) => {
     err && console.warn('路径读取出错', err);

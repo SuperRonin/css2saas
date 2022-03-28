@@ -1,27 +1,8 @@
+/*! Outside Comment 选择器外层注释 */
 header {
-  padding: 20px;
-  h1 {
-    font-size: 24px;
-    -webkit-box-shadow: 0 0 0 rgba(0,0,0,.9);
-    -ms-box-shadow: 0 0 0 rgba(0,0,0,.9);
-    -moz-box-shadow: 0 0 0 rgba(0,0,0,.9);
-    -o-box-shadow: 0 0 0 rgba(0,0,0,.9);
-    box-shadow: 0 0 0 rgba(0,0,0,.9);
-    a {
-      text-decoration: none;
-      &:hover {
-        text-decoration: underline;
-        background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=) 0 0 no-repeat;
-        span {
-          color: red;
-        }
-      }
+    padding: 20px;
+    h1 {
+        /*! Nesting 选择器内层注释 */
+        box-shadow: 0 0 0 rgba(0,0,0,.9);
     }
-  }
-  img {
-    border: none;
-    &.glow {
-      border: solid 1px red;
-    }
-  }
 }
