@@ -6,7 +6,7 @@ const { extractFiles, delFiles } = require('../lib/io.js')
 program
   .name('css-pipe-all')
   .description('A css-pipe tool')
-  .version('1.0.12');
+  .version('1.0.13');
 
 program.command('run')
   .description('begin run')
