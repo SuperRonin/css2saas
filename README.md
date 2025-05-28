@@ -3,9 +3,9 @@
 #### 使用
 
 ```
-npm i css-pipe-all
+npm i css2sass
 
-yarn add css-pipe-all
+yarn add css2sass
 
 cssPipe run <dirname> -t <suffix> -opt <options>
 ```
